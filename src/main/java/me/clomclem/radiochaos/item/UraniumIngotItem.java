@@ -2,9 +2,9 @@ package me.clomclem.radiochaos.item;
 
 import net.minecraft.world.item.Item;
 
-public class UraniumIngot extends AbstractRadioactiveItem {
+public class UraniumIngotItem extends AbstractRadioactiveItem {
 
-    public UraniumIngot(Item.Properties properties) {
+    public UraniumIngotItem(Item.Properties properties) {
         super(properties);
     }
 

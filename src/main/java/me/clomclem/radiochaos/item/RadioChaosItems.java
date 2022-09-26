@@ -16,7 +16,7 @@ public class RadioChaosItems {
             () -> new ItemStack(RadioChaosItems.URANIUM_INGOT));
 
     // Maybe change reference type back to item (public static final Item URANIUM_INGOT)
-    public static final UraniumIngot URANIUM_INGOT = new UraniumIngot(
+    public static final UraniumIngotItem URANIUM_INGOT = new UraniumIngotItem(
             new FabricItemSettings().group(RadioChaosItems.RADIOCHAOS_TAB));
 
     // Thanks Kaupenjoe
