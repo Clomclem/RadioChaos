@@ -3,6 +3,6 @@
   "item.radiochaos.uranium_ingot": "Lingote de uranio",
   "item.radiochaos.raw_uranium": "Uranio en bruto",
   "block.radiochaos.uranium_block": "Bloque de uranio",
-  "item.radiochaos.radioactive_item.tooltip": "Nivel de radiacion",
+  "item.radiochaos.radioactive_item.tooltip.radiation_level": "Nivel de radiacion",
   "death.attack.radioactivity": "%1$s fue expuesto a una alta cantidad de radiacion"
 }
