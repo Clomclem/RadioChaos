@@ -1,5 +1,6 @@
 {
   "itemGroup.radiochaos.main_tab": "RadioCaos",
   "item.radiochaos.uranium_ingot": "Lingote de Uranio",
+  "item.radiochaos.radioactive_item.tooltip": "Nivel de Radioactividad",
   "death.attack.radioactivity": "%1$s fue expuesto a una alta dosis de radiacion"
 }
