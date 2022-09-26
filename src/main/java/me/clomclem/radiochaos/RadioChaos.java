@@ -1,5 +1,6 @@
 package me.clomclem.radiochaos;
 
+import me.clomclem.radiochaos.block.RadioChaosBlocks;
 import me.clomclem.radiochaos.item.RadioChaosItems;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
@@ -12,6 +13,7 @@ public class RadioChaos implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		RadioChaosBlocks.registerBlocks();
 		RadioChaosItems.registerItems();
 	}
 }

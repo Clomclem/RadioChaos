@@ -1,6 +1,7 @@
 package me.clomclem.radiochaos.item;
 
 import me.clomclem.radiochaos.RadioChaos;
+import me.clomclem.radiochaos.block.RadioChaosBlocks;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.core.Registry;
@@ -14,6 +15,9 @@ public class RadioChaosItems {
             new ResourceLocation(RadioChaos.MOD_ID, "main_tab"),
             () -> new ItemStack(RadioChaosItems.URANIUM_INGOT));
 
+    public static final RadioactiveBlockItem URANIUM_BLOCK_ITEM = new RadioactiveBlockItem(RadioChaosBlocks.URANIUM_BLOCK,
+            new FabricItemSettings().group(RadioChaosItems.RADIOCHAOS_TAB));
+
     // Maybe change reference type back to item (public static final Item URANIUM_INGOT)
     public static final UraniumIngotItem URANIUM_INGOT = new UraniumIngotItem(
             new FabricItemSettings().group(RadioChaosItems.RADIOCHAOS_TAB));
@@ -26,6 +30,7 @@ public class RadioChaosItems {
     }
 
     public static void registerItems() {
+        registerItem("uranium_block", URANIUM_BLOCK_ITEM);
         registerItem("uranium_ingot", URANIUM_INGOT);
         registerItem("raw_uranium", RAW_URANIUM);
     }
