@@ -1,29 +1,30 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "radiochaos",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "RadioChaos",
+  "description": "A Fabric mod which adds many radioactivity related blocks, items, weapons and much more.",
   "authors": [
-    "Me!"
+    "Clomclem"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://github.com/Clomclem/RadioChaos",
+    "issues": "https://github.com/Clomclem/RadioChaos/issues",
+    "sources": "https://github.com/Clomclem/RadioChaos"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "license": "MIT",
+  "icon": "assets/radiochaos/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "me.clomclem.radiochaos.RadioChaos"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "radiochaos.mixins.json"
   ],
 
   "depends": {
@@ -31,8 +32,5 @@
     "fabric-api": "*",
     "minecraft": "~1.19",
     "java": ">=17"
-  },
-  "suggests": {
-    "another-mod": "*"
   }
 }
