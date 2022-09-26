@@ -49,7 +49,7 @@ public abstract class PlayerMixin extends LivingEntity implements Radioactive {
 
     private static float getRadioactivityOfItemstack(ItemStack itemStack) {
         Item item = itemStack.getItem();
-        if (item.getClass().getSuperclass() != RadioactiveItem.class) {
+        if (!(item instanceof RadioactiveItem)) {
             return 0;
         }
         RadioactiveItem radioactiveItem = (RadioactiveItem) item;
