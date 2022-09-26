@@ -1,6 +1,7 @@
 {
   "itemGroup.radiochaos.main_tab": "RadioChaos",
   "item.radiochaos.uranium_ingot": "Uranium Ingot",
+  "item.radiochaos.raw_uranium": "Raw Uranium",
   "item.radiochaos.radioactive_item.tooltip": "Radioactivity Level",
   "death.attack.radioactivity": "%1$s was exposed to high amounts of radiation"
 }

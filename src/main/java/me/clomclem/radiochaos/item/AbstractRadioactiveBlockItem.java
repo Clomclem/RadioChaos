@@ -11,7 +11,6 @@ import org.jetbrains.annotations.Nullable;
 import java.util.List;
 
 public abstract class AbstractRadioactiveBlockItem extends BlockItem implements RadioactiveItem {
-
     public AbstractRadioactiveBlockItem(Block block, Properties properties) {
         super(block, properties);
     }

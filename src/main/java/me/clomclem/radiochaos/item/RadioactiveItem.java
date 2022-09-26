@@ -12,7 +12,6 @@ import java.util.List;
 
 // Maybe move this class to radioactive package
 public interface RadioactiveItem extends Radioactive {
-
     default void generateTooltip(ItemStack itemStack, @Nullable Level level, List<Component> tooltip, TooltipFlag isAdvanced) {
         tooltip.add(Component.translatable("item.radiochaos.radioactive_item.tooltip").withStyle(ChatFormatting.YELLOW).append(Component.literal(": "+getRadiationLevel())));
     }

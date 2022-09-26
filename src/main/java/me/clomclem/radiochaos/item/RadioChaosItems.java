@@ -10,13 +10,14 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 
 public class RadioChaosItems {
-
     public static final CreativeModeTab RADIOCHAOS_TAB = FabricItemGroupBuilder.build(
             new ResourceLocation(RadioChaos.MOD_ID, "main_tab"),
             () -> new ItemStack(RadioChaosItems.URANIUM_INGOT));
 
     // Maybe change reference type back to item (public static final Item URANIUM_INGOT)
     public static final UraniumIngotItem URANIUM_INGOT = new UraniumIngotItem(
+            new FabricItemSettings().group(RadioChaosItems.RADIOCHAOS_TAB));
+    public static RawUraniumItem RAW_URANIUM = new RawUraniumItem(
             new FabricItemSettings().group(RadioChaosItems.RADIOCHAOS_TAB));
 
     // Thanks Kaupenjoe
@@ -26,5 +27,6 @@ public class RadioChaosItems {
 
     public static void registerItems() {
         registerItem("uranium_ingot", URANIUM_INGOT);
+        registerItem("raw_uranium", RAW_URANIUM);
     }
 }

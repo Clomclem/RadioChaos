@@ -10,7 +10,6 @@ import org.jetbrains.annotations.Nullable;
 import java.util.List;
 
 public abstract class AbstractRadioactiveItem extends Item implements RadioactiveItem {
-
     public AbstractRadioactiveItem(Properties properties) {
         super(properties);
     }

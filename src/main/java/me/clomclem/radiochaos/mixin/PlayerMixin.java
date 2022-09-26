@@ -17,7 +17,6 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 @SuppressWarnings("unused")
 @Mixin(Player.class)
 public abstract class PlayerMixin extends LivingEntity implements Radioactive {
-
     private float radiationLevel;
 
     private int tickDelta = 0;
