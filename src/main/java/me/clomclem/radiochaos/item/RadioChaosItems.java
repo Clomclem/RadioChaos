@@ -15,7 +15,7 @@ public class RadioChaosItems {
             new ResourceLocation(RadioChaos.MOD_ID, "main_tab"),
             () -> new ItemStack(RadioChaosItems.URANIUM_INGOT));
 
-    public static final RadioactiveBlockItem URANIUM_BLOCK_ITEM = new RadioactiveBlockItem(RadioChaosBlocks.URANIUM_BLOCK,
+    public static final RadioactiveBlockItem URANIUM_BLOCK = new RadioactiveBlockItem(RadioChaosBlocks.URANIUM_BLOCK,
             new FabricItemSettings().group(RadioChaosItems.RADIOCHAOS_TAB));
 
     // Maybe change reference type back to item (public static final Item URANIUM_INGOT)
@@ -30,7 +30,7 @@ public class RadioChaosItems {
     }
 
     public static void registerItems() {
-        registerItem("uranium_block", URANIUM_BLOCK_ITEM);
+        registerItem("uranium_block", URANIUM_BLOCK);
         registerItem("uranium_ingot", URANIUM_INGOT);
         registerItem("raw_uranium", RAW_URANIUM);
     }
