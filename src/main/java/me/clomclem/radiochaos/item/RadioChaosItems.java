@@ -19,7 +19,12 @@ public class RadioChaosItems {
     public static final BlockItem URANIUM_BLOCK = new BlockItem(RadioChaosBlocks.URANIUM_BLOCK,
             new FabricItemSettings().group(RadioChaosItems.RADIOCHAOS_TAB));
 
-    // Maybe change reference type back to item (public static final Item URANIUM_INGOT)
+    public static final BlockItem URANIUM_ORE = new BlockItem(RadioChaosBlocks.URANIUM_ORE,
+            new FabricItemSettings().group(RadioChaosItems.RADIOCHAOS_TAB));
+
+    public static final BlockItem DEEPSLATE_URANIUM_ORE = new BlockItem(RadioChaosBlocks.DEEPSLATE_URANIUM_ORE,
+            new FabricItemSettings().group(RadioChaosItems.RADIOCHAOS_TAB));
+
     public static final UraniumIngotItem URANIUM_INGOT = new UraniumIngotItem(
             new FabricItemSettings().group(RadioChaosItems.RADIOCHAOS_TAB));
     public static final RawUraniumItem RAW_URANIUM = new RawUraniumItem(
@@ -32,6 +37,8 @@ public class RadioChaosItems {
 
     public static void registerItems() {
         registerItem("uranium_block", URANIUM_BLOCK);
+        registerItem("uranium_ore", URANIUM_ORE);
+        registerItem("deepslate_uranium_ore", DEEPSLATE_URANIUM_ORE);
         registerItem("uranium_ingot", URANIUM_INGOT);
         registerItem("raw_uranium", RAW_URANIUM);
     }

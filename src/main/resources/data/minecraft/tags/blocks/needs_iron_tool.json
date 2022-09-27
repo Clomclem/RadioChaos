@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "radiochaos:uranium_block"
+    "radiochaos:uranium_block",
+    "radiochaos:uranium_ore",
+    "radiochaos:deepslate_uranium_ore"
   ]
 }

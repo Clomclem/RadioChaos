@@ -3,6 +3,8 @@
   "item.radiochaos.uranium_ingot": "Uranium Ingot",
   "item.radiochaos.raw_uranium": "Raw Uranium",
   "block.radiochaos.uranium_block": "Block of Uranium",
+  "block.radiochaos.uranium_ore": "Uranium Ore",
+  "block.radiochaos.deepslate_uranium_ore": "Deepslate Uranium Ore",
   "item.radiochaos.radioactive_item.tooltip.radiation_level": "Radiation Level",
   "death.attack.radioactivity": "%1$s was exposed to high amounts of radiation"
 }
