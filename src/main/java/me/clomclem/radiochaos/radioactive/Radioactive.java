@@ -12,5 +12,7 @@ public interface Radioactive {
 
     // Maybe move this DamageSource to another class
     DamageSource RADIOACTIVITY = (new DamageSource("radioactivity")).bypassArmor();
+
+    void setRadiationLevel(float radiationLevel);
     float getRadiationLevel();
 }

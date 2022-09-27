@@ -1,12 +1,11 @@
 package me.clomclem.radiochaos.item;
 
-public class RawUraniumItem extends AbstractRadioactiveItem {
+import me.clomclem.radiochaos.radioactive.Radioactive;
+import net.minecraft.world.item.Item;
+
+public class RawUraniumItem extends Item {
     public RawUraniumItem(Properties properties) {
         super(properties);
-    }
-
-    @Override
-    public float getRadiationLevel() {
-        return 1;
+        ((Radioactive)this).setRadiationLevel(1);
     }
 }

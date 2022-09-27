@@ -1,6 +1,5 @@
 package me.clomclem.radiochaos.mixin;
 
-import me.clomclem.radiochaos.item.RadioactiveItem;
 import me.clomclem.radiochaos.radioactive.Radioactive;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
@@ -17,12 +16,17 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 @SuppressWarnings("unused")
 @Mixin(Player.class)
 public abstract class PlayerMixin extends LivingEntity implements Radioactive {
-    private float radiationLevel;
+    private float radiationLevel = 0;
 
     private int tickDelta = 0;
 
     private PlayerMixin(EntityType<? extends LivingEntity> entityType, Level level) {
         super(entityType, level);
+    }
+
+    @Override
+    public void setRadiationLevel(float radiationLevel) {
+        this.radiationLevel = radiationLevel;
     }
 
     @Override
@@ -48,10 +52,6 @@ public abstract class PlayerMixin extends LivingEntity implements Radioactive {
 
     private static float getRadioactivityOfItemstack(ItemStack itemStack) {
         Item item = itemStack.getItem();
-        if (!(item instanceof RadioactiveItem)) {
-            return 0;
-        }
-        RadioactiveItem radioactiveItem = (RadioactiveItem) item;
-        return radioactiveItem.getRadiationLevel() * itemStack.getCount();
+        return ((Radioactive)item).getRadiationLevel() * itemStack.getCount();
     }
 }

@@ -6,6 +6,7 @@ import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -15,7 +16,7 @@ public class RadioChaosItems {
             new ResourceLocation(RadioChaos.MOD_ID, "main_tab"),
             () -> new ItemStack(RadioChaosItems.URANIUM_INGOT));
 
-    public static final RadioactiveBlockItem URANIUM_BLOCK = new RadioactiveBlockItem(RadioChaosBlocks.URANIUM_BLOCK,
+    public static final BlockItem URANIUM_BLOCK = new BlockItem(RadioChaosBlocks.URANIUM_BLOCK,
             new FabricItemSettings().group(RadioChaosItems.RADIOCHAOS_TAB));
 
     // Maybe change reference type back to item (public static final Item URANIUM_INGOT)

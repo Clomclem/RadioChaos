@@ -1,12 +1,11 @@
 package me.clomclem.radiochaos.block;
 
-public class UraniumBlock extends AbstractRadioactiveBlock {
+import me.clomclem.radiochaos.radioactive.Radioactive;
+import net.minecraft.world.level.block.Block;
+
+public class UraniumBlock extends Block {
     public UraniumBlock(Properties properties) {
         super(properties);
-    }
-
-    @Override
-    public float getRadiationLevel() {
-        return 18;
+        ((Radioactive)this).setRadiationLevel(18);
     }
 }
